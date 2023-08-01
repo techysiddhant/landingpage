@@ -1,0 +1,32 @@
+.background-1{
+  background: linear-gradient(340deg,
+        rgba(33, 0, 75, 0.24) 3.65%,
+        rgba(60, 0, 136, 0) 40.32%),
+      linear-gradient(232deg,
+        rgba(209, 21, 111, 0.16) 0%,
+        rgba(209, 25, 80, 0) 36.63%),
+      linear-gradient(160deg,
+        rgba(58, 19, 255, 0) 29.79%,
+        rgba(98, 19, 255, 0.01) 85.72%),
+      #13111c;
+}
+
+.button-gradient{
+  background: linear-gradient(87.19deg, #801AE6 15.89%, #A21AE6 89.75%),
+      linear-gradient(0deg, #853BCE, #853BCE);
+}
+.bg-intro-1{
+  background: linear-gradient(115.84deg, #26066B 3.52%, #0E3551 66.02%, #052847 88.03%);
+}
+.bg-intro-2{
+  background: linear-gradient(200.8deg, rgba(99, 29, 62, 0.4) 0%, rgba(35, 98, 111, 0.5) 97.77%);
+}
+.bg-intro-3{
+  background: linear-gradient(109.72deg, rgba(46, 29, 99, 0.4) 0%, #3D0F34 100%);
+}
+.bg-tool-2{
+  background: linear-gradient(253.18deg, #6A98BE 0%, #385AA4 20.83%, #354B6B 45.58%, #473024 69.18%, #2A1D14 92.17%);
+}
+.bg-template{
+  background: linear-gradient(96.18deg, rgba(3, 56, 99, 0.3) 0%, rgba(20, 107, 77, 0.3) 100%);
+}
