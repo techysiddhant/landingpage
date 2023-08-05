@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/logo.png";
-import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
+import { HiMenuAlt4 } from "react-icons/hi";
 import { useState } from "react";
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -12,16 +12,62 @@ const Navbar = () => {
 					<img
 						src={Logo}
 						alt="logo"
-						className="w-[50%] lg:w-[70%]"
+						className="w-[30%] lg:w-[30%]"
 					/>
 				</div>
 				<div className="hidden lg:flex justify-between items-center gap-24">
-					<ul className="flex items-center gap-5 text-lg font-medium">
-						<li>Home</li>
-						<li>Carrers</li>
-						<li>Help</li>
-						<li>About</li>
-						<li>Docs</li>
+					<ul className="flex items-center gap-5 text-lg font-medium font-poppins">
+						<li>
+							<NavLink
+								to="/"
+								className={({ isActive }) =>
+									isActive ? "text-[#853BCE]" : "text-white"
+								}
+							>
+								Home
+							</NavLink>
+						</li>
+						<li>
+							<NavLink
+								to="/carrers"
+								className={({ isActive }) =>
+									isActive ? "text-[#853BCE]" : "text-white"
+								}
+							>
+								Carrers
+							</NavLink>
+						</li>
+						<li>
+							<NavLink
+								to="/help"
+								className={({ isActive }) =>
+									isActive ? "text-[#853BCE]" : "text-white"
+								}
+							>
+								Help
+							</NavLink>
+						</li>
+						<li>
+							<NavLink
+								to="/about"
+								className={({ isActive }) =>
+									isActive ? "text-[#853BCE]" : "text-white"
+								}
+							>
+								About
+							</NavLink>
+						</li>
+
+						<li>
+							<NavLink
+								to="/docs"
+								className={({ isActive }) =>
+									isActive ? "text-[#853BCE]" : "text-white"
+								}
+							>
+								Docs
+							</NavLink>
+						</li>
 					</ul>
 
 					<button className="bg-[#853BCE] text-lg font-medium px-6 rounded-lg hidden lg:block">
@@ -29,7 +75,7 @@ const Navbar = () => {
 					</button>
 				</div>
 				<div className="lg:hidden">
-					<RxHamburgerMenu
+					<HiMenuAlt4
 						className="text-2xl"
 						onClick={() => setIsOpen(!isOpen)}
 					/>
@@ -40,11 +86,11 @@ const Navbar = () => {
 					} py-5 px-5`}
 				>
 					<AiOutlineClose
-						className="text-2xl float-right "
+						className="text-2xl md:text-4xl float-right "
 						color="white"
 						onClick={() => setIsOpen(!isOpen)}
 					/>
-					<ul className="flex flex-col gap-4 text-3xl pt-10">
+					<ul className="flex flex-col gap-4 md:gap-8 md:text-5xl text-3xl pt-10">
 						<li>
 							<Link
 								to={"/"}
@@ -86,7 +132,7 @@ const Navbar = () => {
 							</Link>
 						</li>
 					</ul>
-					<button className="bg-[#853BCE] text-lg font-medium px-6 rounded-lg my-6">
+					<button className="bg-[#853BCE] text-lg font-medium px-6 rounded-lg my-6 md:text-xl md:px-8 md:py-2">
 						Login
 					</button>
 				</div>

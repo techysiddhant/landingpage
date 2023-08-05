@@ -30,3 +30,6 @@
 .bg-template{
   background: linear-gradient(96.18deg, rgba(3, 56, 99, 0.3) 0%, rgba(20, 107, 77, 0.3) 100%);
 }
+.border-custom{
+  border-radius: 0 0 6px 6px;
+}

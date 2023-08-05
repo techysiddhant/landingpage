@@ -1,14 +1,21 @@
+import { Link } from "react-router-dom";
 import logo2 from "../../assets/logo-2.png";
+import ScrollToTop from "../../components/utils/ScrollToTop";
 
 const Terms = () => {
 	return (
 		<section>
 			<div className="bg-[#440101] flex items-center justify-center w-full py-3">
-				<img
-					src={logo2}
-					alt=""
-					className="w-[10%]"
-				/>
+				<Link
+					to="/"
+					className="flex items-center justify-center"
+				>
+					<img
+						src={logo2}
+						alt=""
+						className="w-[100%] lg:w-[70%]"
+					/>
+				</Link>
 			</div>
 			<div className="bg-[#E0CC9C] w-full py-5">
 				<h1 className="font-jakarta font-normal text-4xl text-center text-black">
@@ -23,7 +30,7 @@ const Terms = () => {
 					by these Terms. If you do not agree to these Terms, you may not use the
 					Services.`}
 				</p>
-				<ul className="list-decimal px-6">
+				<ul className="list-decimal px-6 text-justify leading-relaxed">
 					<li>Use of Services:</li>
 
 					<ul>
@@ -172,6 +179,7 @@ const Terms = () => {
 					</ul>
 				</ul>
 			</div>
+			<ScrollToTop />
 		</section>
 	);
 };

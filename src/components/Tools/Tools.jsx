@@ -8,7 +8,7 @@ import tool6 from "../../assets/tool-6.png";
 const Card = ({ imgUrl, title, desc, bgColor, textW }) => {
 	return (
 		<div
-			className={` ${bgColor} w-[318px] 2xl:w-[500px] 2xl:h-[300px] h-[237px] flex flex-col items-center justify-center`}
+			className={` ${bgColor} w-[100%] h-[250px] md:min-w-[318px] lg:w-[318px] 2xl:w-[500px] 2xl:h-[300px] md:h-[237px] flex flex-col items-center justify-center`}
 		>
 			<div className="py-5">
 				<img
@@ -18,7 +18,7 @@ const Card = ({ imgUrl, title, desc, bgColor, textW }) => {
 			</div>
 			<h3 className="font-inter font-bold text-lg text-white">{title}</h3>
 			<p
-				className={`font-normal font-inter text-base break-words ${textW} text-white  mx-auto text-center py-4`}
+				className={`font-normal font-inter  break-words ${textW} text-white   text-center py-4`}
 			>
 				{desc}
 			</p>
@@ -28,7 +28,7 @@ const Card = ({ imgUrl, title, desc, bgColor, textW }) => {
 const TextCard = ({ title }) => {
 	return (
 		<div
-			className={`bg-[#181622] w-[320px] h-[237px] 2xl:w-[500px] 2xl:h-[300px] flex flex-col items-center justify-center p-10`}
+			className={`bg-[#181622] w-[100%] h-[250px] md:min-w-[318px] lg:w-[318px] md:h-[237px] 2xl:w-[500px] 2xl:h-[300px] flex flex-col items-center justify-center p-5 md:p-10`}
 		>
 			<h3 className="font-inter font-bold text-lg text-white">{title}</h3>
 		</div>
@@ -36,15 +36,15 @@ const TextCard = ({ title }) => {
 };
 const Tools = () => {
 	return (
-		<section className="bg-[#13111C] py-28">
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4 overflow-x-hidden ">
+		<section className="bg-[#13111C] pt-20 lg:py-28">
+			<div className="grid grid-cols-2 md:grid-cols-2  md:place-items-center lg:grid-cols-4 2xl:grid-cols-4 overflow-x-hidden ">
 				<TextCard title={`Ideal for any kind of product. Such as...`} />
 				<Card
 					imgUrl={tool1}
 					title={"Atmos"}
 					desc="Real estate home customization"
 					bgColor={"bg-[#E06254]"}
-					textW={"w-[60%]"}
+					textW={"w-[70%] md:w-[60%]"}
 				/>
 				<Card
 					imgUrl={tool2}
@@ -52,7 +52,7 @@ const Tools = () => {
 					desc="Decentralized auctions
 house for NFTs"
 					bgColor={"bg-tool-2"}
-					textW={"w-[60%]"}
+					textW={"w-[70%] md:w-[60%] text-[12px] md:text-base"}
 				/>
 				<Card
 					imgUrl={tool3}
@@ -60,6 +60,7 @@ house for NFTs"
 					desc="Machine learning models for
 fire prediction and detection"
 					bgColor={"bg-[#2F2D39]"}
+					textW={"w-[70%] md:w-[60%] text-[12px] md:text-base"}
 				/>
 				<Card
 					imgUrl={tool4}
@@ -67,14 +68,14 @@ fire prediction and detection"
 					desc="Reimagining natural
 language interfaces"
 					bgColor={"bg-[#535260]"}
-					textW={"w-[50%]"}
+					textW={"w-[70%] md:w-[50%] text-[12px] md:text-base"}
 				/>
 				<Card
 					imgUrl={tool5}
 					title={"StepZen"}
 					desc="Easy GraphQL endpoints
 for application data"
-					bgColor={"bg-[#19253F]"}
+					bgColor={"bg-[#19253F] text-[12px] md:text-base"}
 					textW={"w-[60%]"}
 				/>
 				<Card
@@ -83,7 +84,7 @@ for application data"
 					desc="Easily build and sell interactive
 programming courses"
 					bgColor={"bg-[#292E4C]"}
-					textW={"w-[80%]"}
+					textW={"w-[80%] text-[12px] md:text-base"}
 				/>
 				<TextCard title={`and many more...`} />
 			</div>

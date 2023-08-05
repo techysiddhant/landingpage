@@ -11,6 +11,9 @@ export default {
 				jakarta: ["Plus Jakarta Sans", "sans-serif"],
 				roboto: ["Roboto", "sans-serif"],
 			},
+			screens: {
+				"3xl": "1700px",
+			},
 		},
 	},
 	plugins: [],
