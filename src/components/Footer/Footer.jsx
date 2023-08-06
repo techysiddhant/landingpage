@@ -55,7 +55,7 @@ const Footer = () => {
 					<div className="flex flex-col gap-5 text-xs lg:text-sm">
 						<h2 className="uppercase font-bold">Legal</h2>
 						<Link to="/">Fair Use</Link>
-						<Link to="/privacypolicy">Privacy Policy</Link>
+						<Link to="/privacy-policy">Privacy Policy</Link>
 						<Link to="/termsandconditions">Terms of Service</Link>
 						<Link to="/">Bug Bounty Program</Link>
 					</div>

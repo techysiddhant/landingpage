@@ -9,14 +9,17 @@ function App() {
 		<BrowserRouter>
 			<Routes>
 				<Route
+					exact
 					path="/"
 					element={<Home />}
 				/>
 				<Route
-					path="/privacypolicy"
+					exact
+					path="/privacy-policy"
 					element={<Privacy />}
 				/>
 				<Route
+					exact
 					path="/termsandconditions"
 					element={<Terms />}
 				/>
