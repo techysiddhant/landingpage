@@ -1,28 +1,21 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo2 from "../../assets/logo-2.png";
 import ScrollToTop from "../../components/utils/ScrollToTop";
 
 const Terms = () => {
-	return (
-		<section>
-			<div className="bg-[#440101] flex items-center justify-center w-full py-3">
-				<Link
-					to="/"
-					className="flex items-center justify-center"
-				>
-					<img
-						src={logo2}
-						alt=""
-						className="w-[100%] lg:w-[70%]"
-					/>
-				</Link>
-			</div>
-			<div className="bg-[#E0CC9C] w-full py-5">
-				<h1 className="font-jakarta font-normal text-4xl text-center text-black">
-					Terms and Conditions
-				</h1>
-			</div>
-			{/* <div className="w-full p-4 font-poppins text-xl font-normal text-black pb-10">
+  return (
+    <section>
+      <div className="bg-[#440101] flex items-center justify-center w-full py-3">
+        <NavLink exact to="/" className="flex items-center justify-center">
+          <img src={logo2} alt="" className="w-[100%] lg:w-[70%]" />
+        </NavLink>
+      </div>
+      <div className="bg-[#E0CC9C] w-full py-5">
+        <h1 className="font-jakarta font-normal text-4xl text-center text-black">
+          Terms and Conditions
+        </h1>
+      </div>
+      {/* <div className="w-full p-4 font-poppins text-xl font-normal text-black pb-10">
 				<p>
 					{`Please read these Terms and Conditions ("Terms") carefully before using
 					Ricoz's website, mobile applications, products, and services (collectively,
@@ -179,91 +172,98 @@ const Terms = () => {
 					</ul>
 				</ul>
 			</div> */}
-			<div className="w-full p-4 text-black font-normal text-lg leading-relaxed font-jakarta">
-				<p>
-					Welcome to Ricoz! By using our services and courses, you agree to comply
-					with and be bound by the following terms and conditions:
-				</p>
-				<h1 className="font-poppins text-2xl font-semibold py-4">
-					Use of Services:
-				</h1>
-				<p>
-					Users are permitted to access and use our services for personal,
-					non-commercial purposes. You may not reproduce, distribute, modify, or
-					create derivative works based on our content without explicit permission.
-				</p>
-				<h1 className="font-poppins text-2xl font-semibold py-4">
-					Account Registration:
-				</h1>
-				<p>
-					When you register for an account, you agree to provide accurate and
-					complete information. You are responsible for maintaining the security of
-					your account and are liable for any activity that occurs under your
-					account.
-				</p>
+      <div className="w-full p-4 text-black font-normal text-lg leading-relaxed font-jakarta">
+        <p>
+          Welcome to Ricoz! By using our services and courses, you agree to
+          comply with and be bound by the following terms and conditions:
+        </p>
+        <h1 className="font-poppins text-2xl font-semibold py-4">
+          Use of Services:
+        </h1>
+        <p>
+          Users are permitted to access and use our services for personal,
+          non-commercial purposes. You may not reproduce, distribute, modify, or
+          create derivative works based on our content without explicit
+          permission.
+        </p>
+        <h1 className="font-poppins text-2xl font-semibold py-4">
+          Account Registration:
+        </h1>
+        <p>
+          When you register for an account, you agree to provide accurate and
+          complete information. You are responsible for maintaining the security
+          of your account and are liable for any activity that occurs under your
+          account.
+        </p>
 
-				<h1 className="font-poppins text-2xl font-semibold py-4">
-					Intellectual Property:
-				</h1>
-				<p>
-					All content provided by Ricoz, including courses, materials, and website
-					content, is protected by intellectual property rights. You may not use our
-					content for commercial purposes without permission.
-				</p>
+        <h1 className="font-poppins text-2xl font-semibold py-4">
+          Intellectual Property:
+        </h1>
+        <p>
+          All content provided by Ricoz, including courses, materials, and
+          website content, is protected by intellectual property rights. You may
+          not use our content for commercial purposes without permission.
+        </p>
 
-				<h1 className="font-poppins text-2xl font-semibold py-4">User Conduct:</h1>
-				<p>
-					Users must not engage in any activity that may disrupt or interfere with
-					our services, infringe on the rights of others, or violate applicable laws
-					and regulations.
-				</p>
-				<h1 className="font-poppins text-2xl font-semibold py-4">Privacy:</h1>
-				<p>
-					Your use of our services is also governed by our Privacy Policy. By using
-					Ricoz, you consent to the collection, use, and sharing of your information
-					as outlined in the Privacy Policy.
-				</p>
-				<h1 className="font-poppins text-2xl font-semibold py-4">
-					Limitation of Liability:
-				</h1>
-				<p>
-					Ricoz is not responsible for any direct, indirect, incidental, or
-					consequential damages arising from the use of our services, even if we have
-					been advised of the possibility of such damages.
-				</p>
+        <h1 className="font-poppins text-2xl font-semibold py-4">
+          User Conduct:
+        </h1>
+        <p>
+          Users must not engage in any activity that may disrupt or interfere
+          with our services, infringe on the rights of others, or violate
+          applicable laws and regulations.
+        </p>
+        <h1 className="font-poppins text-2xl font-semibold py-4">Privacy:</h1>
+        <p>
+          Your use of our services is also governed by our Privacy Policy. By
+          using Ricoz, you consent to the collection, use, and sharing of your
+          information as outlined in the Privacy Policy.
+        </p>
+        <h1 className="font-poppins text-2xl font-semibold py-4">
+          Limitation of Liability:
+        </h1>
+        <p>
+          Ricoz is not responsible for any direct, indirect, incidental, or
+          consequential damages arising from the use of our services, even if we
+          have been advised of the possibility of such damages.
+        </p>
 
-				<h1 className="font-poppins text-2xl font-semibold py-4">Termination:</h1>
-				<p>
-					Ricoz reserves the right to terminate or suspend your account and access to
-					our services at our discretion, without notice, for any reason, including
-					violations of these Terms of Service.
-				</p>
+        <h1 className="font-poppins text-2xl font-semibold py-4">
+          Termination:
+        </h1>
+        <p>
+          Ricoz reserves the right to terminate or suspend your account and
+          access to our services at our discretion, without notice, for any
+          reason, including violations of these Terms of Service.
+        </p>
 
-				<h1 className="font-poppins text-2xl font-semibold py-4">
-					Changes to Terms:
-				</h1>
-				<p>
-					We may update these Terms of Service from time to time. Your continued use
-					of our services after such changes constitutes your acceptance of the new
-					terms.
-				</p>
+        <h1 className="font-poppins text-2xl font-semibold py-4">
+          Changes to Terms:
+        </h1>
+        <p>
+          We may update these Terms of Service from time to time. Your continued
+          use of our services after such changes constitutes your acceptance of
+          the new terms.
+        </p>
 
-				<h1 className="font-poppins text-2xl font-semibold py-4">Contact Us:</h1>
-				<p>
-					If you have any questions or concerns about these Terms of Service, please
-					contact us at{" "}
-					<a
-						href="mailto:firstricoz1@gmail.com"
-						className="text-blue-500 underline"
-					>
-						firstricoz1@gmail.com
-					</a>
-				</p>
-				<p>Last Updated: 5 August 2023</p>
-			</div>
-			<ScrollToTop />
-		</section>
-	);
+        <h1 className="font-poppins text-2xl font-semibold py-4">
+          Contact Us:
+        </h1>
+        <p>
+          If you have any questions or concerns about these Terms of Service,
+          please contact us at{" "}
+          <a
+            href="mailto:firstricoz1@gmail.com"
+            className="text-blue-500 underline"
+          >
+            firstricoz1@gmail.com
+          </a>
+        </p>
+        <p>Last Updated: 5 August 2023</p>
+      </div>
+      <ScrollToTop />
+    </section>
+  );
 };
 
 export default Terms;
