@@ -21,7 +21,7 @@ const Privacy = () => {
 					Privacy Policy
 				</h1>
 			</div>
-			<div className="w-full p-4 font-poppins text-xl font-normal text-black leading-relaxed">
+			{/* <div className="w-full p-4 font-poppins text-xl font-normal text-black leading-relaxed">
 				<h1>Privacy Policy for Ricoz</h1>
 				<h2>Privacy Policy</h2>
 				<h3>Last updated: July 31, 2023</h3>
@@ -446,6 +446,117 @@ const Privacy = () => {
 				<p>Contact Us</p>
 				<p>
 					If you have any questions about this Privacy Policy, You can contact us:
+				</p>
+			</div> */}
+
+			<div className="w-full p-4 text-black font-normal text-lg leading-relaxed font-jakarta">
+				<p>
+					At Ricoz, we are committed to safeguarding your privacy and ensuring the
+					security of your personal information. This Privacy Policy outlines how we
+					collect, use, and protect the data you provide when using our services and
+					courses, including graphic designing, digital marketing, and web
+					development. By using Ricoz, you consent to the practices described herein.
+				</p>
+				<h1 className="font-poppins text-2xl font-semibold py-4">
+					Information We Collect:
+				</h1>
+				<ul className="text-lg list-decimal px-4 space-y-3">
+					<li>
+						<b>Personal Information:</b> When you sign up or use our services, we
+						collect your name and email address. This information is used for
+						communication, personalization, and to enhance your experience.
+					</li>
+					<li>
+						<b>Phone Authentication:</b> We offer the convenience of phone
+						authentication for secure access. Your phone number is used solely for
+						authentication purposes and is not shared with any third parties.
+					</li>
+				</ul>
+				<h2 className="font-poppins text-2xl font-semibold py-4">
+					How We Use Your Information:
+				</h2>
+				<ul className="text-lg list-decimal px-4 space-y-3">
+					<li>
+						<b>Communication:</b> We use your name and email address to send you
+						important updates, announcements, and course-related information. You have
+						the option to opt out of non-essential communications.
+					</li>
+					<li>
+						<b>Personalization:</b> Your information helps us personalize your
+						learning experience, provide relevant content, and improve our services.
+					</li>
+					<li>
+						<b>Internal Analytics:</b> We may use aggregated and anonymized data for
+						internal analysis to improve our services, content, and user experience.
+					</li>
+				</ul>
+
+				<h2 className="font-poppins text-2xl font-semibold py-4">Data Security:</h2>
+				<ul className="text-lg list-decimal px-4 space-y-3">
+					<li>
+						<b>Protection Measures:</b> We employ industry-standard security measures
+						to protect your personal information from unauthorized access, disclosure,
+						alteration, or destruction.
+					</li>
+					<li>
+						<b>Third-Party Services:</b> We partner with reputable third-party
+						platforms for secure payment processing and authentication. Your data may
+						be processed by these parties solely for the purpose of providing their
+						respective services.
+					</li>
+				</ul>
+				<h2 className="font-poppins text-2xl font-semibold py-4">
+					Information Sharing:
+				</h2>
+				<p>
+					We do not sell, trade, or rent your personal information to third parties.
+					Your data is strictly confidential and is used only for the purposes
+					outlined in this Privacy Policy.
+				</p>
+				<h2 className="font-poppins text-2xl font-semibold py-4">Your Choices:</h2>
+				<ul className="text-lg list-decimal px-4 space-y-3">
+					<li>
+						<b>Access and Update:</b> You can access and update your personal
+						information by logging into your Ricoz account.
+					</li>
+					<li>
+						<b>Communication Preferences:</b> You have the option to unsubscribe from
+						non-essential communications.
+					</li>
+				</ul>
+
+				<h2 className="font-poppins text-2xl font-semibold py-4">
+					Children's Privacy:
+				</h2>
+				<p>
+					Ricoz does not knowingly collect personal information from individuals
+					under the age of 13. Our services are designed for adults and individuals
+					above the age of 13.
+				</p>
+				<h2 className="font-poppins text-2xl font-semibold py-4">
+					Changes to this Privacy Policy:
+				</h2>
+				<p>
+					We may update this Privacy Policy periodically to reflect changes in our
+					practices or legal requirements. We will notify you of any significant
+					updates via email or prominent notices on our website.
+				</p>
+				<h2 className="font-poppins text-2xl font-semibold py-4">Contact Us:</h2>
+				<p className="py-1 ">
+					If you have any questions, concerns, or requests regarding your personal
+					information, please contact our Privacy Team at{" "}
+					<a
+						href="mailto:firstricoz1@gmail.com"
+						className="text-blue-500 underline"
+					>
+						firstricoz1@gmail.com
+					</a>
+				</p>
+				<p className="py-1">Effective Date: 5 August 2023</p>
+				<p className="py-1">
+					Thank you for choosing Ricoz as your creative learning partner. Your trust
+					is important to us, and we are dedicated to providing you with a safe and
+					enriching experience.
 				</p>
 			</div>
 			<ScrollToTop />

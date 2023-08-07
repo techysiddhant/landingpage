@@ -43,7 +43,7 @@ const Intro = () => {
 						Most Flexible e-commerce platform
 					</p>
 
-					<div className="flex flex-col lg:flex-row lg:justify-between bg-intro-1 rounded-2xl lg:rounded-md px-6 md:px-10 lg:pt-10 text-white my-10 max-w-[1200px] mx-auto">
+					<div className="flex flex-col lg:flex-row lg:justify-between bg-intro-1 rounded-2xl lg:rounded-md px-6 md:px-10 lg:pt-10 text-white my-10 max-w-[1200px] mx-auto md:pl-14 md:pr-8">
 						<div className="pt-10">
 							<h2 className="font-inter font-semibold text-3xl">Easy To Use</h2>
 							<p className="font-inter font-normal text-base md:w-[70%] text-[#A1A0AB] py-4 hidden lg:block">
