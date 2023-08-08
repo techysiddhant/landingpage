@@ -50,7 +50,7 @@ const Footer = () => {
             <NavLink to="/">Fair Use</NavLink>
             <NavLink to="/privacy-policy">Privacy Policy</NavLink>
             <NavLink to="/termsandconditions">Terms of Service</NavLink>
-            <NavLink to="/">Bug Bounty Program</NavLink>
+            <NavLink to="/removeAccount">Delete Account</NavLink>
           </div>
         </div>
       </div>

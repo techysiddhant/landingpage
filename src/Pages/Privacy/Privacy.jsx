@@ -527,7 +527,7 @@ const Privacy = () => {
         </ul>
 
         <h2 className="font-poppins text-2xl font-semibold py-4">
-          Children's Privacy:
+          Children&apos;s Privacy:
         </h2>
         <p>
           Ricoz does not knowingly collect personal information from individuals
